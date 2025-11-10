@@ -1,0 +1,107 @@
+/*---------------------- LABORATORIO 1 * DESARROLLO DE APLICACIONES EN RED * ------------------------
+/*---------------------------------- * RAQUEL GONZÁLEZ PESQUEIRA * ----------------------------------
+/*----------------------------------------------- CSS -----------------------------------------------
+
+/* Código para los estilos en CSS */
+/* fuente y fondo general */
+/* estilos generales */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background:#e9edf0;
+  text-align:center;
+  margin:0;
+}
+
+/* cabecera*/
+header, main {
+  max-width: 900px;
+  margin: 10px auto;
+  background: #fff;
+  padding: 15px;
+}
+
+/* título*/
+h1 {
+  margin-bottom:6px;
+  color: #0f405a;
+  letter-spacing:0.5px;
+}
+
+/*menú */
+nav {
+  margin-top:8px;
+}
+nav a{
+  color:#0f405a;
+  text-decoration:none;
+  margin-right:12px;
+}
+
+nav a:hover{
+  text-decoration: underline;
+}
+
+/* gif de la peli */
+.poster{
+  width:700px;
+  display:block;
+  margin:25px auto;
+  border-radius: 6px;
+}
+
+/* barra para añadir películas */
+#formulario {
+  background: #f4f4f4;
+  border:1px solid #dcdcdc;
+  padding:8px;
+  /*margin:12px 0;*/
+  display:inline-block;
+  text-align:left;
+}
+
+#agregar {
+  padding:6px;
+  width:200px;
+  /*border:1px solid #b5b5b5;
+  border-radius:3px;*/
+}
+
+button {
+  background: #006088;
+  padding:6px 12px;
+  color: #fff;
+  border:0;
+  border-radius:3px;
+  cursor:pointer;
+}
+button:hover {
+  background: #004b68;
+}
+
+/* lista de películas */
+#listaPeliculas {
+  background: #fff;
+  padding:10px;
+  display: inline-block;
+  text-align:left;
+  margin-top:10px;
+}
+
+#listaPeliculas li{
+  margin-left:20px;
+  margin-bottom: 5px;
+}
+#volverInicio {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background: #0f405a;
+  color: #fff;
+  border:none;
+  padding:8px 12px;
+  border-radius: 4px;
+  cursor:pointer;
+}
+#volverInicio:hover{
+  background: #0b3145;
+}

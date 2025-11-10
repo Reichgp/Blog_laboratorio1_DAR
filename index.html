@@ -1,0 +1,51 @@
+<!---------------------- LABORATORIO 1 * DESARROLLO DE APLICACIONES EN RED * ------------------------>
+<!---------------------------------- * RAQUEL GONZÁLEZ PESQUEIRA * ---------------------------------->
+<!----------------------------------------------- HTML ---------------------------------------------->
+
+<!-- Código HTML principal. Se ha usado la extensión: Live Server para ir observando el aspecto de la página a medida que se creaba-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi blog de cine</title>
+
+    <!-- se añade el vínculo al código de CSS -->
+    <link rel="stylesheet" href="estilos.css">
+
+ <!-- se inicia el cuerpo de la página -->
+</head>
+<body>
+    <header>
+    <h1>Lista de películas clásicas</h1>
+    <p>En este blog podrás crear tus listas de películas de cine clásico.</p>
+    <p>Solo apto para frikis del cine de un tiempo pasado.</p>
+ <!-- se añade "nav" para cumplir con el criterio de que tiene que ser navegable. Desde aquí, te puede mostrar la lista o directamente enviar a la barra apra añadir una nueva película -->   
+    <nav>
+      <a href="#listaPeliculas">Ver lista</a>
+      <a href="#agregar">Añadir película</a>
+    </nav>
+    </header>
+ <!-- Imagen que indica el motivo del blog -->
+     <!--<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGx1cW41NGJhZ2g2aXR1cG12bTN2c3V4NWZza3BjMTQyeWVtY2xuZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/NSfQXmc6rwQy4/200.webp" alt="Cantando bajo la lluvia gif" class="poster">-->
+     <img src=https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3Y3lpMXJ0cHB0NThwaDczOWZpZWd2MDN6OHh0cGFjNXJoMTB4bHdwZiZlcD12MV9naWZzX3JlbGF0ZWQmY3Q9Zw/3o84sGjhZQMlKbs3Uk/giphy.gif alt="Cantando 2" class="poster">
+     <!--<img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3eHd3cXU1MXUxaWlqcmo2azlnYWQyOGl1YWF3c2I0dHI0d3IwN2JnbyZlcD12MV9naWZzX3JlbGF0ZWQmY3Q9Zw/kIul3QCqVCSGL5Wglr/giphy.gif" alt="Cantando 2" class="poster">-->
+     <p>¡Escribe el nombre de una película y comienza a crear tu lista de clásicos favoritos!</p>
+ <!-- se añade la barra y el botón para añadir a la lista-->
+    <main>
+    <section id="formulario">
+      <input type="text" id="agregar" placeholder="Escribe una película...">
+      <button onclick="buscar()">Agregar</button>
+    </section>
+ <!--se crea una lista con al menos 3 entradas, tal y como pdie la actividad -->
+    <ul id="listaPeliculas">
+      <li>Casablanca (1942)</li>
+      <li>Lo que el viento se llevó (1939)</li>
+      <li>Ciudadano Kane (1941)</li>
+    </ul>
+    </main>
+ <!-- aquí se añade el vínculo al código de JavaScript-->
+    <script src="script.js"></script>
+    <button id="volverInicio" onclick="window.scrollTo({top:0,behavior:'smooth'})">Volver al inicio</button>
+
+</body>
+</html>
